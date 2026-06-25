@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum — love.jenb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF6F1;
+    --ink: #1C1A18;
+    --terracotta: #C77B5A;
+    --line: rgba(28,26,24,0.12);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 48px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+
+  nav .brand {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  nav a.back {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 80px 48px 140px;
+  }
+
+  .frame-number {
+    font-family: 'Inter', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: var(--terracotta);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .frame-number::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 1px;
+    background: var(--terracotta);
+  }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 16px;
+    color: rgba(28,26,24,0.85);
+    margin-bottom: 4px;
+  }
+
+  .placeholder {
+    color: var(--terracotta);
+    font-style: italic;
+  }
+
+  a.inline-link {
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px solid var(--terracotta);
+  }
+
+  footer {
+    padding: 48px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: rgba(28,26,24,0.4);
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="index.html">love.jenb</a>
+  <a class="back" href="index.html">← zurück</a>
+</nav>
+
+<main>
+  <div class="frame-number">Nr. 005</div>
+  <h1>Impressum</h1>
+
+  <h2>Angaben gemäß § 5 TMG</h2>
+  <p class="placeholder">[Vorname Nachname]</p>
+  <p class="placeholder">[Straße Hausnummer]</p>
+  <p class="placeholder">[PLZ Ort]</p>
+
+  <h2>Kontakt</h2>
+  <p>E-Mail: <a class="inline-link" href="mailto:hello@lovejenb.com">hello@lovejenb.com</a></p>
+  <p class="placeholder">Telefon: [optional]</p>
+
+  <h2>Umsatzsteuer</h2>
+  <p>Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).</p>
+
+  <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+  <p class="placeholder">[Vorname Nachname]</p>
+  <p class="placeholder">[Straße Hausnummer]</p>
+  <p class="placeholder">[PLZ Ort]</p>
+</main>
+
+<footer>
+  love.jenb · hamburg · © 2026
+</footer>
+
+</body>
+</html>
