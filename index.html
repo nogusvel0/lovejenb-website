@@ -749,6 +749,14 @@ function setTab(btn, category) {
   document.querySelectorAll('#portfolio .grid').forEach(grid => grid.style.display = 'none');
   document.getElementById('grid-' + category).style.display = 'grid';
 }
+  
+  // Set initial language based on browser preference (German stays default for German speakers)
+(function() {
+  var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+  if (!browserLang.startsWith('de')) {
+    setLang('en');
+  }
+})();
 </script>
 
 </body>
