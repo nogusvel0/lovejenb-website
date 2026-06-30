@@ -8,67 +8,73 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #FAF6F1;
-    --ink: #1C1A18;
-    --terracotta: #C77B5A;
-    --line: rgba(28,26,24,0.12);
+    --blush: #FFEFF7;
+    --wine: #371E2A;
+    --coral: #E8674C;
+    --gold: #C8965A;
+    --line: rgba(55,30,42,0.14);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: var(--cream);
-    color: var(--ink);
+    background: var(--blush);
+    color: var(--wine);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
-  nav {
+  header.site-header {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 48px;
-    font-size: 13px;
-    letter-spacing: 0.08em;
+    padding: 18px 32px;
   }
 
-  nav .brand {
+  .brand {
     font-family: 'Fraunces', serif;
     font-style: italic;
-    font-size: 16px;
-    color: var(--ink);
+    font-size: 18px;
+    color: var(--wine);
     text-decoration: none;
   }
 
-  nav a.back {
-    color: var(--ink);
+  a.back {
+    color: var(--wine);
     text-decoration: none;
     border-bottom: 1px solid var(--line);
+    font-size: 13px;
   }
 
   main {
     max-width: 640px;
     margin: 0 auto;
-    padding: 80px 48px 140px;
+    padding: 80px 32px 100px;
   }
 
-  .frame-number {
+  .eyebrow {
     font-family: 'Inter', monospace;
     font-size: 12px;
     letter-spacing: 0.15em;
-    color: var(--terracotta);
+    color: var(--coral);
     margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .frame-number::before {
+  .eyebrow::before {
     content: '';
     display: inline-block;
     width: 18px;
     height: 1px;
-    background: var(--terracotta);
+    background: var(--coral);
   }
 
   h1 {
@@ -76,6 +82,7 @@
     font-weight: 500;
     font-size: clamp(32px, 5vw, 48px);
     margin-bottom: 48px;
+    color: var(--wine);
   }
 
   h2 {
@@ -83,47 +90,50 @@
     font-size: 13px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--terracotta);
+    color: var(--coral);
     margin-top: 40px;
     margin-bottom: 12px;
   }
 
   p {
     font-size: 16px;
-    color: rgba(28,26,24,0.85);
+    color: rgba(55,30,42,0.88);
     margin-bottom: 4px;
   }
 
   .placeholder {
-    color: var(--terracotta);
+    color: var(--coral);
     font-style: italic;
   }
 
   a.inline-link {
-    color: var(--terracotta);
+    color: var(--coral);
     text-decoration: none;
-    border-bottom: 1px solid var(--terracotta);
+    border-bottom: 1px solid var(--coral);
   }
 
   footer {
-    padding: 48px;
+    padding: 40px 32px;
     text-align: center;
     font-size: 12px;
-    letter-spacing: 0.08em;
-    color: rgba(28,26,24,0.4);
+    letter-spacing: 0.06em;
+    color: rgba(55,30,42,0.5);
     border-top: 1px solid var(--line);
   }
+  footer a { color: inherit; text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<nav>
-  <a class="brand" href="index.html">love.jenb</a>
-  <a class="back" href="index.html">← zurück</a>
-</nav>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">love.jenb</a>
+    <a class="back" href="index.html">← zurück</a>
+  </div>
+</header>
 
 <main>
-  <div class="frame-number">Nr. 005</div>
+  <div class="eyebrow">Nr. 005</div>
   <h1>Impressum</h1>
 
   <h2>Angaben gemäß § 5 TMG</h2>
@@ -145,7 +155,7 @@
 </main>
 
 <footer>
-  love.jenb · hamburg · © 2026
+  love.jenb · hamburg · © 2026 · <a href="index.html">home</a> · <a href="datenschutz.html">datenschutz</a>
 </footer>
 
 </body>
