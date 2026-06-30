@@ -505,6 +505,11 @@
   [data-lang="en"] { display: none; }
   body.lang-en [data-lang="de"] { display: none; }
   body.lang-en [data-lang="en"] { display: block; }
+  nav.links [data-lang="en"],
+  nav.links [data-lang="de"] { display: none; }
+  nav.links [data-lang="de"] { display: inline; }
+  body.lang-en nav.links [data-lang="de"] { display: none; }
+  body.lang-en nav.links [data-lang="en"] { display: inline; }
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -519,9 +524,12 @@
     <a class="brand" href="index.html">love.jenb</a>
     <div class="header-right">
       <nav class="links">
-        <a href="#about">about</a>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
+        <a href="#about" data-lang="de">über mich</a>
+        <a href="#about" data-lang="en">about</a>
+        <a href="#portfolio" data-lang="de">portfolio</a>
+        <a href="#portfolio" data-lang="en">portfolio</a>
+        <a href="#contact" data-lang="de">kontakt</a>
+        <a href="#contact" data-lang="en">contact</a>
       </nav>
       <div class="lang-toggle">
         <button class="active" data-lang-btn="de" onclick="setLang('de')">DE</button>
