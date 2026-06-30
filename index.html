@@ -382,12 +382,19 @@
     border-bottom: 1px solid var(--coral);
   }
 
+  .social-block {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 1px solid var(--line);
+  }
+
   .social-row {
-    margin-top: 32px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
+    flex-wrap: wrap;
   }
+  body.lang-en [data-lang="en"].social-row { display: flex; }
 
   .social-link {
     display: inline-flex;
@@ -400,6 +407,7 @@
     padding: 10px 18px;
     border-radius: 100px;
     transition: all 0.2s ease;
+    flex-shrink: 0;
   }
   .social-link:hover {
     background: var(--wine);
@@ -407,6 +415,12 @@
     border-color: var(--wine);
   }
   .social-link svg { width: 16px; height: 16px; }
+
+  .social-hint {
+    font-size: 13px;
+    color: rgba(55,30,42,0.6);
+    font-style: italic;
+  }
 
   form {
     display: flex;
@@ -520,11 +534,11 @@
 <main>
 
 <section class="hero">
-  <div class="eyebrow">Nr. 001 · Hamburg</div>
+  <div class="eyebrow">Hamburg</div>
 
   <div data-lang="de">
     <h1>Echte Menschen.<br>Echtes <em>Licht.</em></h1>
-    <p class="sub">Ich fotografiere dich so, wie du wirklich bist – offen, unverstellt, echt.</p>
+    <p class="sub">Ich fotografiere dich so, wie du wirklich bist: offen, unverstellt, echt.</p>
     <div class="cta-row">
       <a href="#contact" class="cta">Lass uns reden →</a>
       <span class="scroll-hint">scroll ↓</span>
@@ -533,7 +547,7 @@
 
   <div data-lang="en">
     <h1>Real people.<br>Real <em>light.</em></h1>
-    <p class="sub">I photograph you the way you truly are — present, unguarded, real.</p>
+    <p class="sub">I photograph you the way you truly are: present, unguarded, real.</p>
     <div class="cta-row">
       <a href="#contact" class="cta">Let's talk →</a>
       <span class="scroll-hint">scroll ↓</span>
@@ -545,38 +559,38 @@
 
 <section id="about">
   <div class="section-head">
-    <div class="eyebrow">Nr. 002</div>
+    <div class="eyebrow">-</div>
     <h2 data-lang="de">Über mich</h2>
     <h2 data-lang="en">About</h2>
   </div>
 
   <div class="about-grid">
-    <div class="about-portrait"></div>
+    <div class="about-portrait"><img src="images/DSCF4953.jpg" alt="Jen" style="width:100%;height:100%;object-fit:cover;"></div>
 
     <div class="about-text">
       <div data-lang="de">
         <p>Hi, ich bin Jen.</p>
-        <p>Ich habe schon als Kind fotografiert. Schulausflüge, besondere Momente, alles was mir wichtig erschien. Die Kamera war immer dabei, lange bevor daraus ein Beruf wurde.</p>
-        <p>Mit den Jahren kamen Malerei, Zeichnen und Schmuckdesign dazu. Die Fotografie blieb trotzdem das Zentrum. Ich habe mit Olympus zusammengearbeitet und mich intensiv mit Lightpainting beschäftigt. Daraus wurde irgendwann mein erster richtiger Job als Fotografin und Künstlerin.</p>
-        <p>Heute fotografiere ich Menschen in Hamburg. Portraits, Businessfotos, Momente die bleiben sollen. Mit der gleichen Neugier, mit der ich als Kind durch den Sucher geschaut habe. Nur mit deutlich mehr Erfahrung in Sachen Licht, Farbe und Menschen.</p>
-        <p>Wenn du mit mir arbeitest, arbeitest du mit jemandem, für den Fotografie nie ein Zufall war.</p>
+        <p>Ich weiß, wie sich das anfühlt, vor einer Kamera zu stehen und nicht zu wissen, wohin mit den Händen, dem Blick, dem ganzen Körper. Dieses Gefühl kenne ich. Und genau deshalb mache ich das, was ich tue.</p>
+        <p>Ich war schon als Kind kreativ, habe fotografiert und gezeichnet. Die Kamera und der Stift waren immer dabei, lange bevor daraus ein Beruf wurde. Die Fotografie blieb das Zentrum. Ich habe mit Olympus zusammengearbeitet und mich intensiv mit Lightpainting beschäftigt. Daraus wurde irgendwann mein erster richtiger Job als Fotografin und Künstlerin.</p>
+        <p>Meine Arbeit beginnt nicht, wenn ich auf den Auslöser drücke. Sie beginnt in dem Moment, in dem du dich zum ersten Mal wohlfühlst. Wir machen das gemeinsam, in deinem Tempo, mit deiner Geschichte.</p>
+        <p>Heute fotografiere ich Menschen in Hamburg. Mit der gleichen Neugier wie als Kind, nur mit deutlich mehr Erfahrung in Sachen Licht, Farbe und Menschen.</p>
 
         <div class="signature-block">
           <span class="label">Painted Photograph</span>
-          <p>Manchmal reicht ein Foto nicht aus, um das einzufangen, was ich sehe. Also male ich weiter – digital, mit Textur, mit Farbe. Bis es sich richtig anfühlt.</p>
+          <p>Manchmal reicht ein Foto nicht aus, um das einzufangen, was ich sehe. Also male ich weiter, sei es digital, mit Textur oder mit Farbe. Bis es sich richtig anfühlt.</p>
         </div>
       </div>
 
       <div data-lang="en">
         <p>Hi, I'm Jen.</p>
-        <p>I've been photographing since I was a child. School trips, moments that mattered, anything that felt worth keeping. The camera was always there, long before it became a career.</p>
-        <p>Over the years, painting, drawing, and jewellery design joined in. Photography stayed at the centre though. I worked with Olympus and spent years deep in lightpainting. At some point, that turned into my first real job as a photographer and artist.</p>
-        <p>Today I photograph people in Hamburg. Portraits, business photography, moments meant to last. With the same curiosity I had as a kid looking through the viewfinder. Just with a lot more experience in light, colour, and people.</p>
-        <p>When you work with me, you're working with someone for whom photography was never an accident.</p>
+        <p>I know what it feels like standing in front of a camera, not knowing what to do with your hands, your eyes, your whole self. I know that feeling. And that's exactly why I do what I do.</p>
+        <p>I've been photographing and drawing since I was a child, pretty much side by side. The camera and the pencil were always there, long before any of it became a career. Photography stayed at the centre. I worked with Olympus and spent years deep in lightpainting. At some point, that turned into my first real job as a photographer and artist.</p>
+        <p>My work doesn't start when I press the shutter. It starts the moment you feel at ease for the first time. We do this together, at your pace, with your own story.</p>
+        <p>Today I photograph people in Hamburg. With the same curiosity I had as a kid, just with a lot more experience in light, colour, and people.</p>
 
         <div class="signature-block">
           <span class="label">Painted Photograph</span>
-          <p>Sometimes a photograph alone isn't enough to capture what I see. So I keep going — digitally, with texture, with paint. Until it feels right.</p>
+          <p>Sometimes a photograph alone isn't enough to capture what I see. So I keep going, be it digitally, with texture, or with paint. Until it feels right.</p>
         </div>
       </div>
     </div>
@@ -587,15 +601,15 @@
 
 <section id="portfolio">
   <div class="section-head">
-    <div class="eyebrow">Nr. 003</div>
+    <div class="eyebrow">-</div>
     <h2 data-lang="de">Portfolio</h2>
     <h2 data-lang="en">Portfolio</h2>
   </div>
 
   <div class="portfolio-tabs">
-    <button class="active" onclick="setTab(this)">Portraits</button>
-    <button onclick="setTab(this)">Business</button>
-    <button onclick="setTab(this)">Painted Photograph</button>
+    <button class="active" onclick="setTab(this, 'portraits')">Portraits</button>
+    <button onclick="setTab(this, 'business')">Business</button>
+    <button onclick="setTab(this, 'painted')">Painted Photograph</button>
   </div>
 
   <div class="grid" id="grid-portraits">
@@ -606,13 +620,31 @@
     <div class="tile"><span>portrait 05</span></div>
     <div class="tile"><span>portrait 06</span></div>
   </div>
+
+  <div class="grid" id="grid-business" style="display:none;">
+    <div class="tile"><span>business 01</span></div>
+    <div class="tile"><span>business 02</span></div>
+    <div class="tile"><span>business 03</span></div>
+    <div class="tile"><span>business 04</span></div>
+    <div class="tile"><span>business 05</span></div>
+    <div class="tile"><span>business 06</span></div>
+  </div>
+
+  <div class="grid" id="grid-painted" style="display:none;">
+    <div class="tile"><span>painted 01</span></div>
+    <div class="tile"><span>painted 02</span></div>
+    <div class="tile"><span>painted 03</span></div>
+    <div class="tile"><span>painted 04</span></div>
+    <div class="tile"><span>painted 05</span></div>
+    <div class="tile"><span>painted 06</span></div>
+  </div>
 </section>
 
 <hr class="div">
 
 <section id="contact">
   <div class="section-head">
-    <div class="eyebrow">Nr. 004</div>
+    <div class="eyebrow">-</div>
     <h2 data-lang="de">Kontakt</h2>
     <h2 data-lang="en">Contact</h2>
   </div>
@@ -630,13 +662,6 @@
         <p>Maybe you already know exactly what you want. Maybe you just know that you don't recognise yourself in photos right now, and you'd like that to change. Either way is a good place to start.</p>
         <p>Just reach out. I'd love to hear from you and figure out together what feels right for you.</p>
         <a class="email" href="mailto:hello@lovejenb.com">hello@lovejenb.com</a>
-      </div>
-
-      <div class="social-row">
-        <a class="social-link" href="https://instagram.com/love.jenb" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          @love.jenb
-        </a>
       </div>
     </div>
 
@@ -674,7 +699,26 @@
       <p class="form-note" data-lang="en">I'll get back to you within 1–2 days. Promise.</p>
     </form>
   </div>
+
+  <div class="social-block">
+    <div data-lang="de" class="social-row">
+      <a class="social-link" href="https://instagram.com/love.jenb" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        @love.jenb
+      </a>
+      <span class="social-hint">Hinter den Kulissen gibt's auf Instagram noch mehr zu sehen.</span>
+    </div>
+
+    <div data-lang="en" class="social-row">
+      <a class="social-link" href="https://instagram.com/love.jenb" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        @love.jenb
+      </a>
+      <span class="social-hint">There's more behind the scenes on Instagram.</span>
+    </div>
+  </div>
 </section>
+
 
 </main>
 
@@ -690,9 +734,12 @@ function setLang(lang) {
   });
 }
 
-function setTab(btn) {
+function setTab(btn, category) {
   document.querySelectorAll('.portfolio-tabs button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
+
+  document.querySelectorAll('#portfolio .grid').forEach(grid => grid.style.display = 'none');
+  document.getElementById('grid-' + category).style.display = 'grid';
 }
 </script>
 
